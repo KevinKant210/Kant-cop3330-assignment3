@@ -1,0 +1,21 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+:Input_File: as File
+
+
+
+
+File ---> (Open)
+
+(Open) -> (store)
+(store) -> (Sort)
+
+(store) -> (Output)
+
+
+(Sort)->(store)
+
+(Output) -> :Output_File:
+
+@enduml
