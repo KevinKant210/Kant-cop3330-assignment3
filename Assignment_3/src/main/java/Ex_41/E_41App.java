@@ -23,6 +23,7 @@ import java.io.FileOutputStream;
 import java.util.*;
 
 public class E_41App {
+    private static final String outputDir = "C:\\Users\\Kevin\\Desktop\\Git Projects\\Kant-cop3330-assignment3\\Output";
 
     public static void main(String[] args) {
 
@@ -60,7 +61,7 @@ public class E_41App {
         Collections.sort(namesArray);
 
 
-        fileReader.writeFile(namesArray,"C:\\Users\\Kevin\\Desktop\\Git Projects\\Kant-cop3330-assignment3\\Assignment_3\\src\\main\\java\\Ex_41\\exercise41_output.txt");
+        fileReader.writeFile(namesArray,outputDir + "\\exercise41_output.txt");
 
         fileReader.closeFile();
 

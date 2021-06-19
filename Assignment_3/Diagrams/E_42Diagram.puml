@@ -7,17 +7,27 @@ getFile() -> gets a file and opens its up handles exceptions
 
 }
 
-class StringeParse{
+class StringParse{
     parseWithCommas(String userInput)-> parse via commas
 }
 
 
 class main{
       step 1: create FileMaster Object
+
       step 2: fetch file and open File stream with getFile
       step 3: read parse and store file (via arraylist)) lines with parse W commas
       step 4: write arraylist into output file in the format neccessary
+
+      m
+
 }
 
+
+
+createFileMaster->InputFile
+InputFile->ParseText
+ParseText->OutputArray
+OutputArray->FileOutput
 
 @enduml

@@ -53,10 +53,11 @@ public class FileMaster {
     }
 
     public boolean writeFile(ArrayList<String> output,String FileName){
+        File outputFile = new File(FileName);
 
 
        try{
-           FileWriter fileWriter = new FileWriter(FileName);
+           FileWriter fileWriter = new FileWriter(outputFile);
            fileWriter.write("There is a total of " + output.size() + " names\n");
            fileWriter.write("-----------------------------------\n");
            for(int i = 0 ; i < output.size(); i++){
