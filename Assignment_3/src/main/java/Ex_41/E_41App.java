@@ -50,18 +50,24 @@ public class E_41App {
         //output.close
         //terminate program
 
+
+        //generate Arraylist to hold inputs
         ArrayList<String> namesArray = new ArrayList<>();
 
+        //create fileManipulation objects and grab text file to read from
         FileMaster fileReader = new FileMaster();
         fileReader.getFile("C:\\Users\\Kevin\\Desktop\\Git Projects\\Kant-cop3330-assignment3\\Assignment_3\\src\\main\\java\\Ex_41\\exercise41_input.txt");
 
+        //store data within our previously generated Arraylist
+
         storeFile(namesArray, fileReader);
 
-
+        //sort the input stored in our arraylist
         Collections.sort(namesArray);
 
-
+        //write the arraylist out to a file within a outputdirectory
         fileReader.writeFile(namesArray,outputDir + "\\exercise41_output.txt");
+
 
         fileReader.closeFile();
 

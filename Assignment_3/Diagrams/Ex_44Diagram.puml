@@ -1,0 +1,20 @@
+@startuml
+
+:grabJsonFile;
+:read Json File products;
+:store values in product objects;
+:create products array;
+
+
+repeat
+
+
+:prompt User;
+:read User Input;
+:check if item exists;
+
+repeat while (item exists?) is (no, give error)
+->yes;
+stop
+
+@enduml

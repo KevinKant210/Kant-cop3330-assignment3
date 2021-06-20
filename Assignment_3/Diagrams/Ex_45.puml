@@ -1,0 +1,16 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+start
+:grab File;
+:read file;
+:store file data;
+:parse file data;
+:ask user for output file name;
+:create output file;
+:write parsed file data into output file;
+
+
+stop
+
+@enduml

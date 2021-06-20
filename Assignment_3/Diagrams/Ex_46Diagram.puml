@@ -1,0 +1,22 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+start
+:grab user file;
+
+:read in each token;
+
+:store token as key in a map with initial value 0;
+
+:each time a token generates a unique key generate a unique map with initial val 0;
+
+:use this method on every token within input file;
+
+:reverse sort maps array by value;
+
+:display value of each key to screen;
+
+
+stop
+
+@enduml
